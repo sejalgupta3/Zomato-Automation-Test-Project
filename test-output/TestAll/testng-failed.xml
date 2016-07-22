@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestAll]">
+  <test name="zomato">
+    <classes>
+      <class name="ZomatoSearch"/>
+      <class name="CheckInTest"/>
+      <class name="Registration"/>
+      <class name="loginTests"/>
+      <class name="TestReviews"/>
+      <class name="InviteFriendsTest"/>
+      <class name="EditProfileTest"/>
+      <class name="ZomatoCreateCollection_DeleteCollection"/>
+    </classes>
+  </test> <!-- zomato -->
+  <test name="zomato(failed)">
+    <classes>
+      <class name="ZomatoCreateCollection_DeleteCollection">
+        <methods>
+          <include name="teardown"/>
+          <include name="CreateCollectionTest"/>
+          <include name="DeleteCollectionTest"/>
+        </methods>
+      </class> <!-- ZomatoCreateCollection_DeleteCollection -->
+      <class name="CheckInTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- CheckInTest -->
+      <class name="ZomatoSearch">
+        <methods>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- ZomatoSearch -->
+      <class name="Registration">
+        <methods>
+          <include name="teardown"/>
+          <include name="getPropValues"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Registration -->
+      <class name="EditProfileTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- EditProfileTest -->
+      <class name="InviteFriendsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- InviteFriendsTest -->
+      <class name="loginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="getPropValues"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- loginTests -->
+      <class name="TestReviews">
+        <methods>
+          <include name="setUp"/>
+          <include name="testZomatoReviews"/>
+          <include name="testZomatoReviewsNegative"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestReviews -->
+    </classes>
+  </test> <!-- zomato(failed) -->
+</suite> <!-- Failed suite [TestAll] -->

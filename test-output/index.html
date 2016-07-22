@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestAll">
+              <span class="suite-name border-failed">TestAll</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestAll">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestAll">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestAll">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestAll">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestAll">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestAll">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestAll">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestAll" class="hide-methods failed suite-TestAll"> (hide)</a> <!-- hide-methods failed suite-TestAll -->
+                      <a href="#" panel-name="suite-TestAll" class="show-methods failed suite-TestAll"> (show)</a> <!-- show-methods failed suite-TestAll -->
+                    </span>
+                    <div class="method-list-content failed suite-TestAll">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="ZomatoCreateCollection_DeleteCollection" hash-for-method="CreateCollectionTest">CreateCollectionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="ZomatoCreateCollection_DeleteCollection" hash-for-method="DeleteCollectionTest">DeleteCollectionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="TestReviews" hash-for-method="testZomatoReviews">testZomatoReviews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="TestReviews" hash-for-method="testZomatoReviewsNegative">testZomatoReviewsNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestAll -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestAll" class="hide-methods passed suite-TestAll"> (hide)</a> <!-- hide-methods passed suite-TestAll -->
+                      <a href="#" panel-name="suite-TestAll" class="show-methods passed suite-TestAll"> (show)</a> <!-- show-methods passed suite-TestAll -->
+                    </span>
+                    <div class="method-list-content passed suite-TestAll">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="CheckInTest" hash-for-method="CheckInFunctionality">CheckInFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="EditProfileTest" hash-for-method="editProfile">editProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="InviteFriendsTest" hash-for-method="inviteFriendsByMail">inviteFriendsByMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="Registration" hash-for-method="signUpDisable">signUpDisable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="loginTests" hash-for-method="testInvalidLoginCredentials">testInvalidLoginCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="ZomatoSearch" hash-for-method="testZomatoSearch">testZomatoSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="ZomatoSearch" hash-for-method="testZomatoSearchWithFilters">testZomatoSearchWithFilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="loginTests" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestAll" title="Registration" hash-for-method="validRegistration">validRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestAll -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestAll" class="panel TestAll">
+          <div class="suite-TestAll-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ZomatoCreateCollection_DeleteCollection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateCollectionTest">
+                  </a> <!-- CreateCollectionTest -->
+                  <span class="method-name">CreateCollectionTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=04a2e40343837d65, platform=LINUX, desired={app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, platformVersion=5.0.1, browserName= , platformName=Android, deviceName=XT1064}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName= , takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 8f8d77bb-57af-4aeb-913e-f21172fad2ab
+*** Element info: {Using=id, value=com.application.zomato:id/call_icon}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at ZomatoCreateCollection_DeleteCollection.CreateCollectionTest(ZomatoCreateCollection_DeleteCollection.java:105)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteCollectionTest">
+                  </a> <!-- DeleteCollectionTest -->
+                  <span class="method-name">DeleteCollectionTest</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:109)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:39)
+	at ZomatoCreateCollection_DeleteCollection.LaunchingZomato(ZomatoCreateCollection_DeleteCollection.java:42)
+	at ZomatoCreateCollection_DeleteCollection.DeleteCollectionTest(ZomatoCreateCollection_DeleteCollection.java:123)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-failed -->
+          <div class="suite-TestAll-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestReviews</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testZomatoReviews">
+                  </a> <!-- testZomatoReviews -->
+                  <span class="method-name">testZomatoReviews</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=04a2e40343837d65, platform=LINUX, desired={app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, platformVersion=4.4.4, browserName=Android, platformName=Android, deviceName=104ec392, autoAcceptAlerts=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android, autoAcceptAlerts=true}]
+Session ID: 2d3421bc-ac1e-4355-b262-7e0924192e7d
+*** Element info: {Using=id, value=com.application.zomato:id/reviewRatingbar}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at TestReviews.testZomatoReviews(TestReviews.java:141)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testZomatoReviewsNegative">
+                  </a> <!-- testZomatoReviewsNegative -->
+                  <span class="method-name">testZomatoReviewsNegative</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=04a2e40343837d65, platform=LINUX, desired={app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, platformVersion=4.4.4, browserName=Android, platformName=Android, deviceName=104ec392, autoAcceptAlerts=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android, autoAcceptAlerts=true}]
+Session ID: 2d3421bc-ac1e-4355-b262-7e0924192e7d
+*** Element info: {Using=id, value=com.application.zomato:id/fab_background}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at TestReviews.testZomatoReviewsNegative(TestReviews.java:99)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-failed -->
+          <div class="suite-TestAll-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ZomatoSearch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testZomatoSearch">
+                  </a> <!-- testZomatoSearch -->
+                  <span class="method-name">testZomatoSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testZomatoSearchWithFilters">
+                  </a> <!-- testZomatoSearchWithFilters -->
+                  <span class="method-name">testZomatoSearchWithFilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-passed -->
+          <div class="suite-TestAll-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CheckInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckInFunctionality">
+                  </a> <!-- CheckInFunctionality -->
+                  <span class="method-name">CheckInFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-passed -->
+          <div class="suite-TestAll-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EditProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProfile">
+                  </a> <!-- editProfile -->
+                  <span class="method-name">editProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-passed -->
+          <div class="suite-TestAll-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpDisable">
+                  </a> <!-- signUpDisable -->
+                  <span class="method-name">signUpDisable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validRegistration">
+                  </a> <!-- validRegistration -->
+                  <span class="method-name">validRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-passed -->
+          <div class="suite-TestAll-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">InviteFriendsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inviteFriendsByMail">
+                  </a> <!-- inviteFriendsByMail -->
+                  <span class="method-name">inviteFriendsByMail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-passed -->
+          <div class="suite-TestAll-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">loginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLoginCredentials">
+                  </a> <!-- testInvalidLoginCredentials -->
+                  <span class="method-name">testInvalidLoginCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestAll-class-passed -->
+        </div> <!-- panel TestAll -->
+        <div panel-name="test-xml-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/rbathej/SJSU/287/GroupProject/AutomationProject/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestAll&quot;&gt;
+  &lt;test name=&quot;zomato&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ZomatoSearch&quot;/&gt;
+      &lt;class name=&quot;CheckInTest&quot;/&gt;
+      &lt;class name=&quot;Registration&quot;/&gt;
+      &lt;class name=&quot;loginTests&quot;/&gt;
+      &lt;class name=&quot;TestReviews&quot;/&gt;
+      &lt;class name=&quot;InviteFriendsTest&quot;/&gt;
+      &lt;class name=&quot;EditProfileTest&quot;/&gt;
+      &lt;class name=&quot;ZomatoCreateCollection_DeleteCollection&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- zomato --&gt;
+&lt;/suite&gt; &lt;!-- TestAll --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestAll</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">zomato (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestAll</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestAll</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestAll');
+function tableData_TestAll() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'editProfile')
+data.setCell(0, 2, 'EditProfileTest')
+data.setCell(0, 3, 152236);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateCollectionTest')
+data.setCell(1, 2, 'ZomatoCreateCollection_DeleteCollection')
+data.setCell(1, 3, 75069);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validRegistration')
+data.setCell(2, 2, 'Registration')
+data.setCell(2, 3, 54998);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'inviteFriendsByMail')
+data.setCell(3, 2, 'InviteFriendsTest')
+data.setCell(3, 3, 49854);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validLogin')
+data.setCell(4, 2, 'loginTests')
+data.setCell(4, 3, 40029);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CheckInFunctionality')
+data.setCell(5, 2, 'CheckInTest')
+data.setCell(5, 3, 38034);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testZomatoSearch')
+data.setCell(6, 2, 'ZomatoSearch')
+data.setCell(6, 3, 35079);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testZomatoReviews')
+data.setCell(7, 2, 'TestReviews')
+data.setCell(7, 3, 20416);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testInvalidLoginCredentials')
+data.setCell(8, 2, 'loginTests')
+data.setCell(8, 3, 18254);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testZomatoSearchWithFilters')
+data.setCell(9, 2, 'ZomatoSearch')
+data.setCell(9, 3, 15748);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testZomatoReviewsNegative')
+data.setCell(10, 2, 'TestReviews')
+data.setCell(10, 3, 5433);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'signUpDisable')
+data.setCell(11, 2, 'Registration')
+data.setCell(11, 3, 5060);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'DeleteCollectionTest')
+data.setCell(12, 2, 'ZomatoCreateCollection_DeleteCollection')
+data.setCell(12, 3, 13);
+window.suiteTableData['TestAll']= { tableData: data, tableDiv: 'times-div-TestAll'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-TestAll">
+              </div> <!-- times-div-TestAll -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestAll</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestAll" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ZomatoSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testZomatoSearch</span>
+                <span class="method-start">10799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testZomatoSearchWithFilters</span>
+                <span class="method-start">45878 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">61626 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CheckInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckInFunctionality</span>
+                <span class="method-start">71536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">109571 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Registration</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getPropValues</span>
+                <span class="method-start">110542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">110543 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpDisable</span>
+                <span class="method-start">121951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">127011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getPropValues</span>
+                <span class="method-start">127929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">127929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validRegistration</span>
+                <span class="method-start">139494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">194493 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getPropValues</span>
+                <span class="method-start">195575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">195575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLoginCredentials</span>
+                <span class="method-start">207217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">225471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">getPropValues</span>
+                <span class="method-start">226535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">226535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">238182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">278211 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestReviews</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">279244 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testZomatoReviews</span>
+                <span class="method-start">308240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testZomatoReviewsNegative</span>
+                <span class="method-start">328665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">334100 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">InviteFriendsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">335152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inviteFriendsByMail</span>
+                <span class="method-start">343893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">393747 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EditProfileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">394886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editProfile</span>
+                <span class="method-start">406657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">558893 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ZomatoCreateCollection_DeleteCollection</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateCollectionTest</span>
+                <span class="method-start">559871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteCollectionTest</span>
+                <span class="method-start">634942 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">634956 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

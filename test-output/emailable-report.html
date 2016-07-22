@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">TestAll</th></tr><tr><td><a href="#t0">zomato</a></td><td class="num">9</td><td class="num">0</td><td class="num attn">4</td><td class="num">636,037</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestAll</th></tr></tbody><tbody id="t0"><tr><th colspan="4">zomato &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestReviews</td><td><a href="#m0">testZomatoReviews</a></td><td rowspan="1">1461898280079</td><td rowspan="1">20416</td></tr><tr class="failedeven"><td><a href="#m1">testZomatoReviewsNegative</a></td><td rowspan="1">1461898300504</td><td rowspan="1">5433</td></tr><tr class="failedodd"><td rowspan="2">ZomatoCreateCollection_DeleteCollection</td><td><a href="#m2">CreateCollectionTest</a></td><td rowspan="1">1461898531710</td><td rowspan="1">75069</td></tr><tr class="failedodd"><td><a href="#m3">DeleteCollectionTest</a></td><td rowspan="1">1461898606781</td><td rowspan="1">13</td></tr><tr><th colspan="4">zomato &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">CheckInTest</td><td><a href="#m4">CheckInFunctionality</a></td><td rowspan="1">1461898043375</td><td rowspan="1">38034</td></tr><tr class="passedodd"><td rowspan="1">EditProfileTest</td><td><a href="#m5">editProfile</a></td><td rowspan="1">1461898378496</td><td rowspan="1">152236</td></tr><tr class="passedeven"><td rowspan="1">InviteFriendsTest</td><td><a href="#m6">inviteFriendsByMail</a></td><td rowspan="1">1461898315732</td><td rowspan="1">49854</td></tr><tr class="passedodd"><td rowspan="2">Registration</td><td><a href="#m7">signUpDisable</a></td><td rowspan="1">1461898093790</td><td rowspan="1">5060</td></tr><tr class="passedodd"><td><a href="#m8">validRegistration</a></td><td rowspan="1">1461898111333</td><td rowspan="1">54998</td></tr><tr class="passedeven"><td rowspan="2">ZomatoSearch</td><td><a href="#m9">testZomatoSearch</a></td><td rowspan="1">1461897982638</td><td rowspan="1">35079</td></tr><tr class="passedeven"><td><a href="#m10">testZomatoSearchWithFilters</a></td><td rowspan="1">1461898017717</td><td rowspan="1">15748</td></tr><tr class="passedodd"><td rowspan="2">loginTests</td><td><a href="#m11">testInvalidLoginCredentials</a></td><td rowspan="1">1461898179056</td><td rowspan="1">18254</td></tr><tr class="passedodd"><td><a href="#m12">validLogin</a></td><td rowspan="1">1461898210021</td><td rowspan="1">40029</td></tr></tbody></table><h2>zomato</h2><h3 id="m0">TestReviews#testZomatoReviews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=04a2e40343837d65, platform=LINUX, desired={app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, platformVersion=4.4.4, browserName=Android, platformName=Android, deviceName=104ec392, autoAcceptAlerts=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android, autoAcceptAlerts=true}]
+Session ID: 2d3421bc-ac1e-4355-b262-7e0924192e7d
+*** Element info: {Using=id, value=com.application.zomato:id/reviewRatingbar}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at TestReviews.testZomatoReviews(TestReviews.java:141)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">TestReviews#testZomatoReviewsNegative</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.43 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=04a2e40343837d65, platform=LINUX, desired={app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, platformVersion=4.4.4, browserName=Android, platformName=Android, deviceName=104ec392, autoAcceptAlerts=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android, autoAcceptAlerts=true}]
+Session ID: 2d3421bc-ac1e-4355-b262-7e0924192e7d
+*** Element info: {Using=id, value=com.application.zomato:id/fab_background}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at TestReviews.testZomatoReviewsNegative(TestReviews.java:99)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">ZomatoCreateCollection_DeleteCollection#CreateCollectionTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=04a2e40343837d65, platform=LINUX, desired={app=/Users/rbathej/SJSU/287/GroupProject/Zomato.apk, appPackage=com.application.zomato, platformVersion=5.0.1, browserName= , platformName=Android, deviceName=XT1064}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, browserName= , takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 8f8d77bb-57af-4aeb-913e-f21172fad2ab
+*** Element info: {Using=id, value=com.application.zomato:id/call_icon}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at ZomatoCreateCollection_DeleteCollection.CreateCollectionTest(ZomatoCreateCollection_DeleteCollection.java:105)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">ZomatoCreateCollection_DeleteCollection#DeleteCollectionTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Renu.local&apos;, ip: &apos;10.250.182.209&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10.5&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:109)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:39)
+	at ZomatoCreateCollection_DeleteCollection.LaunchingZomato(ZomatoCreateCollection_DeleteCollection.java:42)
+	at ZomatoCreateCollection_DeleteCollection.DeleteCollectionTest(ZomatoCreateCollection_DeleteCollection.java:123)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">CheckInTest#CheckInFunctionality</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">EditProfileTest#editProfile</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">InviteFriendsTest#inviteFriendsByMail</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">Registration#signUpDisable</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">Registration#validRegistration</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">ZomatoSearch#testZomatoSearch</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">ZomatoSearch#testZomatoSearchWithFilters</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">loginTests#testInvalidLoginCredentials</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">loginTests#validLogin</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

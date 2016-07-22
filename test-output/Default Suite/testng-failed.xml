@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="walmartAutomation">
+    <classes>
+      <class name="Registration">
+        <methods>
+          <include name="validRegistration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Registration -->
+      <class name="loginTests">
+        <methods>
+          <include name="testInvalidLoginCredentials" invocation-numbers="0"/>
+          <include name="validLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- loginTests -->
+      <class name="ZomatoFilter">
+        <methods>
+          <include name="setUp"/>
+          <include name="testZomatoFilters" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ZomatoFilter -->
+      <class name="ZomatoCreateCollection_DeleteCollection">
+        <methods>
+          <include name="CreateCollectionTest" invocation-numbers="0"/>
+          <include name="DeleteCollectionTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ZomatoCreateCollection_DeleteCollection -->
+      <class name="EditProfileTest">
+        <methods>
+          <include name="editProfile" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- EditProfileTest -->
+    </classes>
+  </test> <!-- walmartAutomation -->
+  <test name="walmartAutomation(failed)">
+    <classes>
+      <class name="Registration">
+        <methods>
+          <include name="validRegistration"/>
+          <include name="getPropValues"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Registration -->
+      <class name="ZomatoFilter">
+        <methods>
+          <include name="setUp"/>
+          <include name="testZomatoFilters"/>
+        </methods>
+      </class> <!-- ZomatoFilter -->
+      <class name="EditProfileTest">
+        <methods>
+          <include name="editProfile"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- EditProfileTest -->
+      <class name="loginTests">
+        <methods>
+          <include name="testInvalidLoginCredentials"/>
+          <include name="setUp"/>
+          <include name="getPropValues"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- loginTests -->
+      <class name="ZomatoCreateCollection_DeleteCollection">
+        <methods>
+          <include name="CreateCollectionTest"/>
+          <include name="DeleteCollectionTest"/>
+        </methods>
+      </class> <!-- ZomatoCreateCollection_DeleteCollection -->
+    </classes>
+  </test> <!-- walmartAutomation(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="zomato">
+        <classes>
+
+            <class name="ZomatoSearch" />
+            <class name="CheckInTest" />
+            <class name="Registration"/>
+            <class name="loginTests"/>
+            <class name="TestReviews"/>
+            <class name="InviteFriendsTest"/>
+            <class name="EditProfileTest"/>
+            <class name="ZomatoCreateCollection_DeleteCollection" />
+            <!--<class name="ZomatoFilter"/>-->
+         </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,14 @@
+EditProfileTest.class
+InviteFriendsTest.class
+pageObjects/LoginPage.class
+pageObjects/collections.class
+pageObjects/homePage.class
+pageObjects/searchPage.class
+pageObjects/RegistrationPage.class
+ZomatoCreateCollection_DeleteCollection.class
+loginTests.class
+ZomatoSearch.class
+CheckInTest.class
+Registration.class
+TestReviews.class
+pageObjects/editProfile.class
